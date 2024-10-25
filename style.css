@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    background-image: url('https://i.makeagif.com/media/3-28-2016/kkoK4V.gif');
+    background-size: cover; /* width height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Add this line to make it a column layout */
+}
+.container{
+    display: flex;
+    width: 88%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.searchContainer{
+    background-color: lightblue;
+    width: 30%;
+}
+.container1 {
+    background-color: #eff3f5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    border-radius: 5px;
+    display: grid;
+    text-align: center;
+    /* margin-top: 20px; Add margin-top to create space between header and container */
+}
+
+#currentWeather{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 30px;
+    width: 50px;
+    margin: 25px;
+    margin-top: 50px;
+}
+#forecastContainer{
+    margin-top: 35px;
+    margin: 25px;
+    flex: 3;
+    /* display: flex; */
+}
+#Today-Highlights{
+    margin-top: 50px;
+    margin-left: -560px;
+}
+
+
+.location-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.current-weather {
+    margin-bottom: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.forecast-card {
+    flex: 0 0 auto;
+    background-color: #fff;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    border-radius: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    width: 85px;
+    text-align: center;
+}
+
+.todayshighlights{
+    border-radius: 20px;
+    margin: 10px;
+    width: 200px;
+}
+
+
